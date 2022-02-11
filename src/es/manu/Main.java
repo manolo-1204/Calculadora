@@ -22,8 +22,10 @@ public class Main {
                     System.out.println("Vamo a sumar");
                     int sumando1, sumandos, total = 0;
 
-                    System.out.print("¿Cuántos números quieres sumar? ");
-                    sumandos = entrada.nextInt();
+                    do {
+                        System.out.print("¿Cuántos números quieres sumar?(dame un número valido) ");
+                        sumandos = entrada.nextInt();
+                    } while (sumandos < 0);
 
                     for (int i = 1; i <= sumandos; i++){
                         System.out.print("Sumando " + i + ": ");
