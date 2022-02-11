@@ -47,10 +47,12 @@ public class Main {
                 case 0:
                     System.out.println("Ya te va?? Despídete bien no??");
                     break;
+                default:
+                    System.out.println("Error: esa opción no está disponible");
             }
-            entrada.nextLine();
             System.out.println();
 
+            entrada.nextLine();
             System.out.print("Pulsa intro para continuar...");
             entrada.nextLine();
         } while (opcion != 0);
